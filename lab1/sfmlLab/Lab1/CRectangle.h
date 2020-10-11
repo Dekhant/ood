@@ -2,7 +2,7 @@
 #include "CBody.h"
 #include <SFML/Graphics.hpp>
 
-class CRectangle final : public CBody
+class CRectangle: public CBody
 {
 public:
 	sf::Shape* m_rectangle;

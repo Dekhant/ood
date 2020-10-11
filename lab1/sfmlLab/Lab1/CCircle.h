@@ -4,8 +4,9 @@
 
 const float P = 3.14f;
 
-class CCircle final : public CBody
+class CCircle: public CBody
 {
+public:
 	sf::Shape* m_circle;
 	CCircle(sf::Shape* circle) : m_circle(circle)
 	{

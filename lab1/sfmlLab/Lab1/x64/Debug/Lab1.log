@@ -1,0 +1,43 @@
+﻿  Processing.cpp
+C:\Users\sasha\source\repos\Lab1\Processing.cpp(27,66): warning C4244: аргумент: преобразование "_Ty2" в "T", возможна потеря данных
+          with
+          [
+              _Ty2=int
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\sasha\source\repos\Lab1\Processing.cpp(27,49): warning C4244: аргумент: преобразование "_Ty1" в "T", возможна потеря данных
+          with
+          [
+              _Ty1=int
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\sasha\source\repos\Lab1\Processing.cpp(44,79): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+C:\Users\sasha\source\repos\Lab1\Processing.cpp(44,39): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+C:\Users\sasha\source\repos\Lab1\Processing.cpp(45,53): warning C4244: аргумент: преобразование "_Ty2" в "float", возможна потеря данных
+          with
+          [
+              _Ty2=int
+          ]
+C:\Users\sasha\source\repos\Lab1\Processing.cpp(45,36): warning C4244: аргумент: преобразование "_Ty1" в "float", возможна потеря данных
+          with
+          [
+              _Ty1=int
+          ]
+C:\Users\sasha\source\repos\Lab1\Processing.cpp(55,31): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Users\sasha\source\repos\Lab1\Processing.cpp(56,80): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Users\sasha\source\repos\Lab1\Processing.cpp(56,33): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+  Lab1.vcxproj -> C:\Users\sasha\source\repos\Lab1\x64\Debug\Lab1.exe

@@ -14,8 +14,9 @@ public:
 
 	std::shared_ptr<IShapeGroup> GetGroup() override;
 	std::shared_ptr<const IShapeGroup> GetGroup() const override;
-
 	void Draw(ICanvas& canvas) override;
+
+private:
 	virtual void DrawingBehavior(ICanvas& canvas) const = 0;
 
 private:

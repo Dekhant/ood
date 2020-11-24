@@ -79,13 +79,13 @@ std::optional<RectD> CShapeGroup::GetFrame() const
 
 void CShapeGroup::SetFrame(const RectD& rect)
 {
-	auto IsCurrentGroupFrame = GetFrame();
-	if (!IsCurrentGroupFrame)
+	auto GroupFrame = GetFrame();
+	if (!GroupFrame)
 	{
 		return;
 	}
 
-	auto currentGroupFrame = *IsCurrentGroupFrame;
+	auto currentGroupFrame = *GroupFrame;
 
 	for (auto& shape : m_shapes)
 	{
@@ -107,37 +107,21 @@ void CShapeGroup::SetFrame(const RectD& rect)
 
 std::shared_ptr<IOutlineStyle> CShapeGroup::GetOutlineStyle()
 {
-	if (!m_outlineStyle)
-	{
-		throw std::runtime_error("Outline style doesn't exist");
-	}
 	return m_outlineStyle;
 }
 
 std::shared_ptr<const IOutlineStyle> CShapeGroup::GetOutlineStyle() const
 {
-	if (!m_outlineStyle)
-	{
-		throw std::runtime_error("Outline style doesn't exist");
-	}
 	return m_outlineStyle;
 }
 
 std::shared_ptr<IStyle> CShapeGroup::GetFillStyle()
 {
-	if (!m_fillStyle)
-	{
-		throw std::runtime_error("Fill style doesn't exist");
-	}
 	return m_fillStyle;
 }
 
 std::shared_ptr<const IStyle> CShapeGroup::GetFillStyle() const
 {
-	if (!m_fillStyle)
-	{
-		throw std::runtime_error("Fill style doesn't exist");
-	}
 	return m_fillStyle;
 }
 

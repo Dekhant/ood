@@ -66,12 +66,6 @@ std::shared_ptr<IShape> CreateScaledHouse()
 
 	scaledHouse->SetFrame({ { 420, 230 }, 320, 200 });
 
-	//auto group = std::make_shared<CShapeGroup>();
-	//auto r = std::make_shared<CRectangle>(PointD{ 500, 200 }, 20, 30);
-	//auto e = std::make_shared<CEllipse>(PointD{ 500, 200 }, 30, 20);
-	//group->GetGroup()->InsertShape(r);
-	//group->GetGroup()->InsertShape(e);
-	//scaledHouse->GetGroup()->InsertShape(group);
 
 	scaledHouse->GetFillStyle()->Enable(false);
 	scaledHouse->GetOutlineStyle()->Enable(true);

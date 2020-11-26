@@ -21,10 +21,9 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{dc9688d9-8649-405c-8196-95def03cc82b}</ProjectGuid>
-    <RootNamespace>Project2</RootNamespace>
+    <ProjectGuid>{6c488439-f61d-4cc3-90a9-40aa185b6d09}</ProjectGuid>
+    <RootNamespace>GumballMachineTests</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
-    <ProjectName>Editor</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -89,7 +88,6 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -104,7 +102,6 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -119,7 +116,6 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -134,7 +130,6 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -144,58 +139,9 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="AbstractCommand.h" />
-    <ClInclude Include="ChangeStringCommand.h" />
-    <ClInclude Include="ConstDocumentItem.h" />
-    <ClInclude Include="DeleteItemCommand.h" />
-    <ClInclude Include="Document.h" />
-    <ClInclude Include="DocumentItem.h" />
-    <ClInclude Include="History.h" />
-    <ClInclude Include="HistoryAdapter.h" />
-    <ClInclude Include="HtmlConverter.h" />
-    <ClInclude Include="ICommand.h" />
-    <ClInclude Include="ICommandSink.h" />
-    <ClInclude Include="ICommand_fwd.h" />
-    <ClInclude Include="IDocument.h" />
-    <ClInclude Include="Image.h" />
-    <ClInclude Include="InsertItemCommand.h" />
-    <ClInclude Include="IParagraph.h" />
-    <ClInclude Include="IImage.h" />
-    <ClInclude Include="Menu.h" />
-    <ClInclude Include="Paragraph.h" />
-    <ClInclude Include="Path.h" />
-    <ClInclude Include="ResizeCommand.h" />
-    <ClInclude Include="stdafx.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="AbstractCommand.cpp" />
-    <ClCompile Include="ChangeStringCommand.cpp" />
-    <ClCompile Include="ConstDocumentItem.cpp" />
-    <ClCompile Include="DeleteItemCommand.cpp" />
-    <ClCompile Include="Document.cpp" />
-    <ClCompile Include="DocumentItem.cpp" />
-    <ClCompile Include="History.cpp" />
-    <ClCompile Include="HistoryAdapter.cpp" />
-    <ClCompile Include="HtmlConverter.cpp" />
-    <ClCompile Include="Image.cpp" />
-    <ClCompile Include="InsertItemCommand.cpp" />
-    <ClCompile Include="main.cpp" />
-    <ClCompile Include="Menu.cpp" />
-    <ClCompile Include="Paragraph.cpp" />
-    <ClCompile Include="ResizeCommand.cpp" />
-    <ClCompile Include="stdafx.cpp" />
+    <ClCompile Include="GumballMachineTests.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
-    <Import Project="packages\boost.1.72.0.0\build\boost.targets" Condition="Exists('packages\boost.1.72.0.0\build\boost.targets')" />
   </ImportGroup>
-  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
-    <PropertyGroup>
-      <ErrorText>Данный проект ссылается на пакеты NuGet, отсутствующие на этом компьютере. Используйте восстановление пакетов NuGet, чтобы скачать их.  Дополнительную информацию см. по адресу: http://go.microsoft.com/fwlink/?LinkID=322105. Отсутствует следующий файл: {0}.</ErrorText>
-    </PropertyGroup>
-    <Error Condition="!Exists('packages\boost.1.72.0.0\build\boost.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\boost.1.72.0.0\build\boost.targets'))" />
-  </Target>
 </Project>

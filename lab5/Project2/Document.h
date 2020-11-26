@@ -1,17 +1,18 @@
 #pragma once
 #include "IDocument.h"
 #include "History.h"
+#include <optional>
 
 
 class CDocument : public IDocument
 {
 public:
 	std::shared_ptr<IParagraph> InsertParagraph(const std::string& text,
-		optional<size_t> position = none) override;
+		std::optional<size_t> position = none) override;
 
 
 	std::shared_ptr<IImage> InsertImage(const Path& path, int width, int height,
-		optional<size_t> position = none) override;
+		std::optional<size_t> position = none) override;
 
 	size_t GetItemsCount() const override;
 

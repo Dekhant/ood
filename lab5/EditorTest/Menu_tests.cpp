@@ -1,5 +1,5 @@
 #include "../Editor/Menu.h"
-#include "../catch/catch.hpp"
+#include "../../catch/catch.hpp"
 #include <sstream>
 
 TEST_CASE("AddItem must add command to menu")

@@ -1,4 +1,4 @@
-#include "../catch/catch.hpp"
+#include "../../catch/catch.hpp"
 #include "../Editor/DeleteItemCommand.h"
 #include "../Editor/Image.h"
 #include "../Editor/Paragraph.h"

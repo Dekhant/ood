@@ -1,5 +1,5 @@
 #include "../Editor/History.h"
-#include "../catch/catch.hpp"
+#include "../../catch/catch.hpp"
 #include <memory>
 #include "MockCommand.h"
 

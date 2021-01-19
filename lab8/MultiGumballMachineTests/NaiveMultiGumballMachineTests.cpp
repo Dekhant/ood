@@ -1,6 +1,6 @@
 #include "../MultiGumballMachine/NaiveMultiGumballMachine.h"
 #include "CreateGumballMachineState.h"
-#include "../catch/catch.hpp"
+#include "../../catch/catch.hpp"
 
 TEST_CASE("Test sold out state in NaiveGumballMachine")
 {

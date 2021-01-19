@@ -2,7 +2,7 @@
 #include "../Editor/InsertDocumentItemCommand.h"
 #include "../Editor/Paragraph.h"
 #include "MockCommandSink.h"
-#include "../catch/catch.hpp"
+#include "../../catch/catch.hpp"
 
 namespace
 {

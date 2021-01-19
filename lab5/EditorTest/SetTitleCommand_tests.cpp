@@ -1,6 +1,6 @@
 #pragma once
 #include "../Editor/SetTitleCommand.h"
-#include "../catch/catch.hpp"
+#include "../../catch/catch.hpp"
 
 TEST_CASE("SetTitleCommand swaps replacement and reference of replaceable strings")
 {

@@ -1,6 +1,6 @@
 #include "../MultiGumballMachine/MultiGumballMachine.h"
 #include "CreateGumballMachineState.h"
-#include "../catch/catch.hpp"
+#include "../../catch/catch.hpp"
 using namespace with_state;
 
 TEST_CASE("Test sold out state")

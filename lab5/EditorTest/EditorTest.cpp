@@ -1,5 +1,5 @@
 ﻿#include "../Editor/Editor.h"
-#include "../catch/catch.hpp"
+#include "../../catch/catch.hpp"
 #include <sstream>
 
 TEST_CASE("Run() starts processing the input stream")

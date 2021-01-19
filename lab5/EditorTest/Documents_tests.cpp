@@ -1,4 +1,4 @@
-#include "../catch/catch.hpp"
+#include "../../catch/catch.hpp"
 #include "../Editor/Paragraph.h"
 #include "../Editor/Image.h"
 #include "../Editor/ConstDocumentItem.h"

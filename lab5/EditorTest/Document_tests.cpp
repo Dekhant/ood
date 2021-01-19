@@ -1,5 +1,5 @@
 #include "../Editor/Document.h"
-#include "../catch/catch.hpp"
+#include "../../catch/catch.hpp"
 #include <fstream>
 #include <sstream>
 

@@ -1,6 +1,6 @@
 #include "../MultiGumballMachineV2/MultiGumballMachineV2.h"
 #include "../MultiGumballMachineTests/CreateGumballMachineState.h"
-#include "../catch/catch.hpp"
+#include "../../catch/catch.hpp"
 using namespace with_state;
 
 TEST_CASE("Refill in SoldOutState must change state")

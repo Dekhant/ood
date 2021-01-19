@@ -1,6 +1,6 @@
 #pragma once
 #include "../Editor/ResizeImageCommand.h"
-#include "../catch/catch.hpp"
+#include "../../catch/catch.hpp"
 
 TEST_CASE("ResizeImage swaps new size and references of current size")
 {
